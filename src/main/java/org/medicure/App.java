@@ -24,7 +24,7 @@ public class App
         WebDriver driver = new ChromeDriver(options);
 
         //open the web application
-        driver.get("http://54.164.136.19:8082/");
+        driver.get("http://54.147.206.154:8082/");
         String title = driver.getTitle();
         System.out.println(title);
         Thread.sleep(3000);
