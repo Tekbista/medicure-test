@@ -29,27 +29,27 @@ public class App
         System.out.println(title);
         Thread.sleep(3000);
 
-        WebElement contactBtn = driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul/li[5]/a"));
+        WebElement contactBtn = driver.findElement(By.id("contact"));
         contactBtn.click();
         Thread.sleep(3000);
 
-        WebElement name = driver.findElement(By.xpath("/html/body/section/div/div[2]/div[1]/div/div[1]/div[1]/div/input"));
+        WebElement name = driver.findElement(By.id("name"));
         name.sendKeys("Tek Bista");
         Thread.sleep(2000);
 
-        WebElement phone = driver.findElement(By.xpath("/html/body/section/div/div[2]/div[1]/div/div[1]/div[2]/div/input"));
+        WebElement phone = driver.findElement(By.id("phone"));
         phone.sendKeys("9848234567");
         Thread.sleep(2000);
 
-        WebElement email = driver.findElement(By.xpath("/html/body/section/div/div[2]/div[1]/div/div[2]/input"));
+        WebElement email = driver.findElement(By.id("email"));
         email.sendKeys("test@medicure.com");
         Thread.sleep(2000);
 
-        WebElement message = driver.findElement(By.xpath("/html/body/section/div/div[2]/div[1]/div/div[3]/input"));
+        WebElement message = driver.findElement(By.id("message"));
         message.sendKeys("This is a test message");
         Thread.sleep(2000);
 
-        WebElement submitBtn = driver.findElement(By.xpath("/html/body/section/div/div[2]/div[1]/div/div[4]/button"));
+        WebElement submitBtn = driver.findElement(By.id("send"));
         submitBtn.click();
         Thread.sleep(2000);
 
